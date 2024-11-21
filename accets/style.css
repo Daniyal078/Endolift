@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+
+:root {
+    --main-bg: #f4e6e2;
+}
+
+.bg-main {
+    background: var(--main-bg) !important;
+}
+
+.text-main {
+    color: var(--main-bg) !important;
+}
+
+.home-banner-bg {
+    background: linear-gradient(to bottom, #fff, var(--main-bg));
+}
+
+
+.ls-sm {
+    letter-spacing: -2px;
+}
+
+
+
+
+.gallery {
+    /* position: absolute; */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.cards {
+    position: relative;
+    width: 14rem;
+    height: 18rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cards li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 19rem;
+    height: 18rem;
+    text-align: center;
+    line-height: 18rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    /* background-color: #9d7cce; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0.8rem;
+}
+
+.actions {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.drag-proxy {
+    visibility: hidden;
+    position: absolute;
+}

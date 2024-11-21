@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accets/style.css">
+    <link rel="stylesheet" href="accets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+</head>
+
+<style>
+    .accordion-button:not(.collapsed) {
+        background-color: #000 !important;
+        color: #fff;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url('accets/images/rounded minus icon.png');
+    }
+
+    .accordion-button::after {
+        background-image: url('accets/images/rounded plus icon.png');
+    }
+</style>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container bg-main py-3 px-4 mx-lg-auto mx-md-auto rounded-2 mt-2 mx-3">
+            <a class="navbar-brand fw-bold" href="Home.html">Endolift</a>
+            <div class="d-flex gap-lg-3 gap-md-2 align-items-center justify-content-end" id="navbarNav">
+
+                <ul class="d-lg-flex d-md-flex d-none gap-lg-4 gap-md-3 align-items-center m-0 p-0">
+                    <li class="list-group">
+                        <a class="fw-bold text-black" aria-current="page" href="#">Treatments</a>
+                    </li>
+                    <li class="list-group">
+                        <a class="fw-bold text-black" aria-current="page" href="#">Trainings</a>
+                    </li>
+                    <li class="list-group">
+                        <a class=" fw-semibold bg-black rounded-2 text-main px-4 py-2" aria-current="page" href="#">Book
+                            a free consultation <i class="fa-solid ms-2 fa-arrow-right-long"></i></a>
+                    </li>
+                </ul>
+                <li class="list-group">
+                    <i class="fa-solid fa-bars-staggered bg-black text-main p-2 rounded fs-5"></i>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+
+    <div class="container">
+        <div class="text-center display-4 fw-bold text-black my-3">Book a free consultation</div>
+
+        <div class="text-center">Get a free Scalp Endolift consultation</div>
+        <div class="border-bottom border-black mt-4"></div>
+    </div>
+
+
+
+
+    <section class="py-5">
+        <div class="container d-flex justify-content-center">
+            <div class="bg-white shadow p-5 col-lg-10 rounded-2">
+                <div class="row">
+                    <div class="col-lg-7 FadeUp">
+                        <div>
+                            <div class="fs-3 fw-bold my-3">Book a free consultation</div>
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label for="">First name*</label>
+                                        <input type="text" class="form-control border-0 bg-light">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">First name*</label>
+                                        <input type="text" class="form-control border-0 bg-light">
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col-lg-6">
+                                        <label for="">Email*</label>
+                                        <input type="text" class="form-control border-0 bg-light">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Phone number*</label>
+                                        <input type="text" class="form-control border-0 bg-light">
+                                    </div>
+                                </div>
+                                <label for="">Messahe*</label>
+                                <textarea name="" class="form-control border-0 bg-light" id=""></textarea>
+
+
+                                <button class="btn btn-outline-dark px-4 my-3">Upload Image</button>
+                                <div class="mb-3">Accepted file types: jpeg, jpg, png, gif, Max. file size: 16 MB.</div>
+                                <button class="btn btn-dark py-2 w-100">Upload Image</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 FadeUp">
+                        <div>
+                            <div class="fs-3 fw-bold my-3">Types of Consultations</div>
+
+                            <div class="border-bottom py-3"><span
+                                    class="bg-black rounded-circle p-2 py-0 lh-1 text-white">1</span> <b>In Person</b>
+                                get all your questions answered face to face by an expert Endolift
+                                treatment specialist.</div>
+
+                            <div class="border-bottom py-3"><span
+                                    class="bg-black rounded-circle p-2 py-0 lh-1 text-white">2</span> <b>Phone</b> speak
+                                with an license professional over the phone</div>
+
+                            <div class="border-bottom py-3"><span
+                                    class="bg-black rounded-circle p-2 py-0 lh-1 text-white">3</span> <b>Facetime</b>
+                                Learn more about the Endolift process with a Facetime chat</div>
+
+                            <div class="border-bottom py-3"><span
+                                    class="bg-black rounded-circle p-2 py-0 lh-1 text-white">4</span> Receive a <b>
+                                    quote</b> and <b> treatment plan based</b> on your specific treatment
+                                goals </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-main">
+        <div class="container py-5 px-lg-2 px-md-2 px-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-10 mb-lg-0 mb-4">
+                    <div class="fw-bold fs-2 text-uppercase">Endolift</div>
+                    <div>
+                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-facebook"></i>
+                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-square-instagram"></i>
+                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-square-twitter"></i>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
+                    <div class="fw-bold fs-5 mb-3 text-uppercase">TREATMENTS</div>
+                    <ul class="list-unstyled">
+                        <li class="my-2 fw-semibold"><a href="#">Endolift Laser Skin Tightening Procedure</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Lower Eyelid Endolift</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Mandibular Contour (Endolift)</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Neck Endolift</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Tummy Skin Tightening</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Under Arm Endolift</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Under Chin Reduction Endolift</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
+                    <div class="fw-bold fs-5 mb-3 text-uppercase">LEARN</div>
+
+                    <ul class="list-unstyled">
+                        <li class="my-2 fw-semibold"><a href="#">FAQ</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Trainings</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Meet the team</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Blog</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">book a free consultation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-lg-0">
+                    <div class="fw-bold fs-5 mb-3 text-uppercase">Newsletter</div>
+                    <button class="btn bg-black text-main">Enter your email address <i
+                            class="ms-2 fa-regular fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" bg-main">
+            <div class="py-4 container fw-semibold border-top border-dark text-center">
+                © 2024 Quick N Easy. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="accets/GSAP.js"></script>
+
+</body>
+
+</html>

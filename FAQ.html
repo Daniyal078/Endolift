@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accets/style.css">
+    <link rel="stylesheet" href="accets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+</head>
+
+<style>
+    .accordion-button:not(.collapsed) {
+        background-color: #000 !important;
+        color: #fff;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url('accets/images/rounded minus icon.png');
+    }
+
+    .accordion-button::after {
+        background-image: url('accets/images/rounded plus icon.png');
+    }
+</style>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container bg-main py-3 px-4 mx-lg-auto mx-md-auto rounded-2 mt-2 mx-3">
+            <a class="navbar-brand fw-bold" href="Home.html">Endolift</a>
+            <div class="d-flex gap-lg-3 gap-md-2 align-items-center justify-content-end" id="navbarNav">
+
+                <ul class="d-lg-flex d-md-flex d-none gap-lg-4 gap-md-3 align-items-center m-0 p-0">
+                    <li class="list-group">
+                        <a class="fw-bold text-black" aria-current="page" href="#">Treatments</a>
+                    </li>
+                    <li class="list-group">
+                        <a class="fw-bold text-black" aria-current="page" href="#">Trainings</a>
+                    </li>
+                    <li class="list-group">
+                        <a class=" fw-semibold bg-black rounded-2 text-main px-4 py-2" aria-current="page" href="#">Book
+                            a free consultation <i class="fa-solid ms-2 fa-arrow-right-long"></i></a>
+                    </li>
+                </ul>
+                <li class="list-group">
+                    <i class="fa-solid fa-bars-staggered bg-black text-main p-2 rounded fs-5"></i>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+
+    <div class="container">
+        <div class="text-center display-4 fw-bold text-black my-3">FAQ</div>
+
+        <div class="text-center">If the answer to your question is not listed below, please email us at <b>
+                info@endolift.com </b> and <br> we will get
+            back to you as soon as we can!</div>
+    </div>
+
+
+
+
+    <section class="py-5">
+        <div class="container">
+            
+            <div class="border-bottom border-black mb-3"></div>
+
+            <div class="row align-items-center justify-content-center gap-lg-0 gap-md-0 gap-3">
+                <div class="col-lg-8 col-md-6 FadeUp">
+                    <div class="row my-3">
+                        <div class="col-lg-auto">
+                            <button class="btn btn-dark">View all</button>
+                        </div>
+                        <div class="col-lg-auto">
+                            <button class="btn bg-main text-dark fw-semibold">Treatment</button>
+                        </div>
+                        <div class="col-lg-auto">
+                            <button class="btn bg-main text-dark fw-semibold">Results</button>
+                        </div>
+                        <div class="col-lg-auto">
+                            <button class="btn bg-main text-dark fw-semibold">Post-Treatment</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button border-bottom fw-semibold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        What services do you offer at Endolift?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-black text-main">
+                                        We offer Endolift treatments designed to address a variety of cosmetic concerns,
+                                        including skin tightening, facial contouring, localized fat reduction, and
+                                        overall skin rejuvenation.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed border-bottom fw-semibold py-4"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        What is Endolift, and how does it work?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-black text-main">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed border-bottom fw-semibold py-4"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
+                                        aria-expanded="false" aria-controls="collapse3">
+                                        Am I a good candidate for Endolift?
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-black text-main">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed border-bottom fw-semibold py-4"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
+                                        aria-expanded="false" aria-controls="collapse4">
+                                        How long does an Endolift session take?
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-black text-main">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed border-bottom fw-semibold py-4"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
+                                        aria-expanded="false" aria-controls="collapse5">
+                                        What is the recovery time after an Endolift treatment?
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-black text-main">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed border-bottom fw-semibold py-4"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse6"
+                                        aria-expanded="false" aria-controls="collapse6">
+                                        Are there any risks or side effects associated with Endolift?
+                                    </button>
+                                </h2>
+                                <div id="collapse6" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-black text-main">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-main">
+        <div class="container py-5 px-lg-2 px-md-2 px-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-10 mb-lg-0 mb-4">
+                    <div class="fw-bold fs-2 text-uppercase">Endolift</div>
+                    <div>
+                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-facebook"></i>
+                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-square-instagram"></i>
+                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-square-twitter"></i>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
+                    <div class="fw-bold fs-5 mb-3 text-uppercase">TREATMENTS</div>
+                    <ul class="list-unstyled">
+                        <li class="my-2 fw-semibold"><a href="#">Endolift Laser Skin Tightening Procedure</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Lower Eyelid Endolift</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Mandibular Contour (Endolift)</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Neck Endolift</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Tummy Skin Tightening</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Under Arm Endolift</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Under Chin Reduction Endolift</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
+                    <div class="fw-bold fs-5 mb-3 text-uppercase">LEARN</div>
+
+                    <ul class="list-unstyled">
+                        <li class="my-2 fw-semibold"><a href="#">FAQ</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Trainings</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Meet the team</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">Blog</a></li>
+                        <li class="my-2 fw-semibold"><a href="#">book a free consultation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-lg-0">
+                    <div class="fw-bold fs-5 mb-3 text-uppercase">Newsletter</div>
+                    <button class="btn bg-black text-main">Enter your email address <i
+                            class="ms-2 fa-regular fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" bg-main">
+            <div class="py-4 container fw-semibold border-top border-dark text-center">
+                © 2024 Quick N Easy. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="accets/GSAP.js"></script>
+
+</body>
+
+</html>
