@@ -16,7 +16,7 @@ gsap.from('.banner-image, .Banner-btn', {
 
 gsap.from('nav a', {
     y: 30,
-    delay: 1,
+    // delay: 1,
     opacity: 0,
     stagger: 0.3
 })
@@ -26,6 +26,12 @@ gsap.from(".count", {
     textContent: 0,
     duration: 5,
     snap: { textContent: 1 },
+    scrollTrigger: {
+        trigger: ".count",
+        scroller: "body",
+        // markers: true,
+        start: "top 75%",
+    },
 })
 
 gsap.utils.toArray(".FadeUp").forEach((element) => {
@@ -40,7 +46,7 @@ gsap.utils.toArray(".FadeUp").forEach((element) => {
             trigger: element,
             scroller: "body",
             // markers: true,
-            start: "top 60%",
+            // start: "top 65%",
         },
     });
 });
