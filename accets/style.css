@@ -10,6 +10,7 @@ body {
     height: 100vh;
     min-width: 360px;
     font-family: sans-serif;
+    scroll-behavior: none;
 }
 
 
@@ -34,11 +35,40 @@ body {
     letter-spacing: -2px;
 }
 
+.mask {
+    width: 100%;
+    height: 100vh;
+    background: #000000cc;
+    position: fixed;
+    display: none;
+    z-index: 1;
+}
 
+.side-nav {
+    width: 280px;
+    height: 100vh;
+    background-color: var(--main-bg);
+    position: fixed;
+    z-index: 2;
+    transition: 0.7s;
+    right: -100%;
+}
+
+.side-nav li {
+    transition: 0.4s ease-out;
+}
+
+.side-nav li:hover {
+    /* box-shadow: 0px 0px 3px 3px; */
+    background-color: #fff;
+}
+
+.pointer{
+    cursor: pointer;
+}
 
 
 .gallery {
-    /* position: absolute; */
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -80,4 +110,10 @@ body {
 .drag-proxy {
     visibility: hidden;
     position: absolute;
+}
+
+.Treatments img {
+    height: 230px;
+    min-height: 200px;
+    object-fit: cover;
 }
