@@ -63,8 +63,13 @@ body {
     background-color: #fff;
 }
 
-.pointer{
+.pointer {
     cursor: pointer;
+}
+
+
+.enter-email::placeholder {
+    color: #f4e6e2 !important;
 }
 
 

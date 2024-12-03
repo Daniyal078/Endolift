@@ -31,6 +31,10 @@
     .accordion-button::after {
         background-image: url('accets/images/rounded plus icon.png');
     }
+
+    .hidden-blogs {
+        display: none;
+    }
 </style>
 
 <body>
@@ -42,19 +46,17 @@
     <!-- mask end -->
 
     <!-- side nav -->
-    <div class="side-nav d-flex align-items-center justify-content-center">
+    <div class="side-nav d-flex  justify-content-center">
         <i class="fa-solid fa-circle-chevron-right position-absolute top-50 pointer fs-3 bg-main rounded-circle py-1 px-1 side-nav-close"
             style="left: -13px;"></i>
 
         <ul class="d-flex flex-column gap-3 p-0 w-100 p-4">
-            <li class="list-group p-2 fw-semibold"><a href="Treatments.html">Treatments</a></li>
-            <li class="list-group p-2 fw-semibold"><a href="Trainings.html">Trainings</a></li>
-            <li class="list-group p-2 fw-semibold"><a href="Book-free.html">Book a free consultation </a></li>
-            <li class="list-group p-2 fw-semibold"><a href="FAQ.html">FAQ</a></li>
-            <li class="list-group p-2 fw-semibold"><a href="#">Trainings</a></li>
-            <li class="list-group p-2 fw-semibold"><a href="Meet-my-team.html">Meet the team</a></li>
-            <li class="list-group p-2 fw-semibold"><a href="blog.html">Blog</a></li>
-            <li class="list-group p-2 fw-semibold"><a href="Book-free.html">book a free consultation</a></li>
+            <li class="list-group text-black p-2 fw-semibold"><a href="Treatments.html">Treatments</a></li>
+            <li class="list-group text-black p-2 fw-semibold"><a href="Trainings.html">Trainings</a></li>
+            <li class="list-group text-black p-2 fw-semibold"><a href="Book-free.html">Book a free consultation </a></li>
+            <li class="list-group text-black p-2 fw-semibold"><a href="FAQ.html">FAQ</a></li>
+            <li class="list-group text-black p-2 fw-semibold"><a href="Meet-my-team.html">Meet the team</a></li>
+            <li class="list-group text-black p-2 fw-semibold"><a href="blog.html">Blog</a></li>
         </ul>
     </div>
     <!-- side nav end -->
@@ -74,7 +76,8 @@
                     <li class="list-group">
                         <a class=" fw-semibold bg-black rounded-2 text-main px-4 py-2" aria-current="page"
                             href="Book-free.html">Book a free consultation <i
-                                class="fa-solid ms-2 fa-arrow-right-long"></i></a>
+                                class="fa-solid ms-2 fa-arrow-right-long"></i>
+                        </a>
                     </li>
                 </ul>
                 <li class="list-group">
@@ -89,7 +92,8 @@
     <div class="container">
         <div class="banner-image text-center display-4 fw-bold text-black my-3">Blog</div>
 
-        <div class="text-center banner-text">"Discover the transformative power of Endolift: a cutting-edge, non-surgical treatment
+        <div class="text-center banner-text">"Discover the transformative power of Endolift: a cutting-edge,
+            non-surgical treatment
             <br>
             for skin tightening, fat reduction, and rejuvenation."
         </div>
@@ -101,8 +105,9 @@
 
     <section class="py-5">
         <div class="container">
-
-            <img class="FadeUp mb-4" src="accets/images/image.png" width="100%" alt="">
+            <a href="blog-details.html">
+                <img class="FadeUp mb-4" src="accets/images/image.png" width="100%" alt="">
+            </a>
 
             <div class="row">
                 <div class="col-lg-4 col-md-6 FadeUp mb-3">
@@ -225,6 +230,10 @@
                         </div>
                     </a>
                 </div>
+            </div>
+
+
+            <div class="row hidden-blogs">
                 <div class="col-lg-4 col-md-6 FadeUp mb-3">
                     <a href="blog-details.html">
                         <div class="border p-2 rounded-3">
@@ -287,11 +296,16 @@
                 </div>
             </div>
 
-            <button class="btn btn-dark mx-auto mt-3 d-block">Load More</button>
+            <!-- <button class="btn btn-dark mx-auto mt-3 d-block load-blogs">Load More</button> -->
+            <button class="btn btn-dark mx-auto mt-3 d-block load-blogs" type="button">
+                <span class="spinner-border spinner-border-sm d-none" aria-hidden="true"></span>
+                <span role="status">Show More</span>
+            </button>
+
         </div>
     </section>
 
-       <footer class="bg-main">
+    <footer class="bg-main">
         <div class="container py-5 px-lg-2 px-md-2 px-4">
             <div class="row">
                 <div class="col-lg-3 col-md-10 mb-lg-0 mb-4">
@@ -307,9 +321,12 @@
                 <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
                     <div class="fw-bold fs-5 mb-3 text-uppercase">TREATMENTS</div>
                     <ul class="list-unstyled">
-                        <li class="my-2 fw-semibold"><a href="Treatments-detail1.html">Endolift Laser Skin Tightening Procedure</a></li>
-                        <li class="my-2 fw-semibold"><a href="Treatements-detail2.html">Under Chin Reduction Endolift</a></li>
-                        <li class="my-2 fw-semibold"><a href="Treatements-detail3.html">Mandibular Contour (Endolift)</a></li>
+                        <li class="my-2 fw-semibold"><a href="Treatments-detail1.html">Endolift Laser Skin Tightening
+                                Procedure</a></li>
+                        <li class="my-2 fw-semibold"><a href="Treatements-detail2.html">Under Chin Reduction
+                                Endolift</a></li>
+                        <li class="my-2 fw-semibold"><a href="Treatements-detail3.html">Mandibular Contour
+                                (Endolift)</a></li>
                         <li class="my-2 fw-semibold"><a href="Treatements-detail4.html">Neck Endolift</a></li>
                         <li class="my-2 fw-semibold"><a href="Treatements-detail5.html">Tummy Skin Tightening</a></li>
                         <li class="my-2 fw-semibold"><a href="Treatements-detail6.html">Lower Eyelid Endolift</a></li>
@@ -322,16 +339,46 @@
 
                     <ul class="list-unstyled">
                         <li class="my-2 fw-semibold"><a href="FAQ.html">FAQ</a></li>
-                        <li class="my-2 fw-semibold"><a href="#">Trainings</a></li>
+                        <li class="my-2 fw-semibold"><a href="Trainings.html">Trainings</a></li>
                         <li class="my-2 fw-semibold"><a href="Meet-my-team.html">Meet the team</a></li>
                         <li class="my-2 fw-semibold"><a href="blog.html">Blog</a></li>
-                        <li class="my-2 fw-semibold"><a href="Book-free.html">book a free consultation</a></li>
+                        <li class="my-2 fw-semibold"><a href="Book-free.html">Book a free consultation</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-4 mb-lg-0">
+                 <div class="col-lg-3 col-md-4 mb-lg-0">
                     <div class="fw-bold fs-5 mb-3 text-uppercase">Newsletter</div>
-                    <button class="btn bg-black text-main">Enter your email address <i
-                            class="ms-2 fa-regular fa-paper-plane"></i></button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="enter-email" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close position-absolute end-0 mt-4 mx-3"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="text-center">
+                                        <img src="accets/images/Thank you.png" width="100" alt="">
+                                        <div class="fs-3 fw-bold my-4 lh-1">Welcome to the Endolift Community</div>
+                                        <div class="my-2">
+                                            Thank you for subscribing to our newsletter. We're thrilled to have you on
+                                            board and excited to share the latest news, exclusive offers, and expert
+                                            tips to help you achieve your wellness and aesthetic goals.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex align-items-center bg-black px-2 py-1 rounded-2">
+                        <input type="text" class="enter-email text-main form-control bg-transparent border-0"
+                            placeholder="Enter your email address">
+                        <i class="ms-2 fa-regular fa-paper-plane text-main pointer" data-bs-toggle="modal"
+                            data-bs-target="#enter-email"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -345,6 +392,28 @@
     </footer>
 
     <script src="accets/script.js"></script>
+
+
+    <script>
+        document.querySelector('.load-blogs').addEventListener("click", function () {
+            const button = this;
+            const spinner = button.querySelector('.spinner-border');
+            const statusText = button.querySelector('span[role="status"]');
+
+            spinner.classList.remove('d-none');
+            statusText.textContent = 'Loading...';
+            button.setAttribute('disabled', 'true');
+
+            setTimeout(() => {
+                document.querySelector('.hidden-blogs').style.display = 'flex';
+                spinner.classList.add('d-none');
+                statusText.textContent = 'Show Blogs';
+                button.removeAttribute('disabled');
+                document.querySelector('.load-blogs').style.display = "none"
+            }, 3000);
+        });
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
@@ -361,6 +430,10 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="accets/GSAP.js"></script>
+
+
+
+
 
 </body>
 
